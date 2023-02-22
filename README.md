@@ -4,16 +4,16 @@ Challenge description
 You work as a DevOps engineer for a small startup that is rapidly growing. The team needs to launch several new EC2 instances to support the growth of the business. Your task is to write a script that will launch an EC2 instance with Boto3, using command-line arguments to specify the instance type, AMI ID, key pair, and security groups. The script should print out the instance ID of the newly launched instance.
 
 Challenge instructions
-Create a new Python script called launch_instance.py.
-Import the Boto3 library and create an EC2 client object.
-Define command-line arguments using the argparse library:
---image-id: the ID of the AMI to use for the instance (required)
---instance-type: the instance type to launch (default: t2.micro)
---key-name: the name of the key pair to use for SSH access (required)
---security-group-ids: the IDs of the security groups to assign to the instance (required)
-Use the run_instances() method on the EC2 client object to launch a new EC2 instance with the specified configuration.
-Print out the instance ID of the newly launched instance.
-Test your script by running it from the command line with the required arguments.
+1:Create a new Python script called launch_instance.py.
+2:Import the Boto3 library and create an EC2 client object.
+3:Define command-line arguments using the argparse library:
+4:--image-id: the ID of the AMI to use for the instance (required)
+5:--instance-type: the instance type to launch (default: t2.micro)
+6:--key-name: the name of the key pair to use for SSH access (required)
+7:--security-group-ids: the IDs of the security groups to assign to the instance (required)
+8:Use the run_instances() method on the EC2 client object to launch a new EC2 instance with the specified configuration.
+9:Print out the instance ID of the newly launched instance.
+10:Test your script by running it from the command line with the required arguments.
 
 Challenge hints
 You can find a list of available AMIs in the AWS documentation.
